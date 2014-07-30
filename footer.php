@@ -9,7 +9,8 @@
 
         <section id="footer-links">
             <ul id="footer-links-list">
-                <li><a href="#">Issue Tracker</a> (find a bug?)</li>
+                <li><a href="https://github.com/Catsman/GatherYourPartium/issues">Issue Tracker</a> (find a bug?)</li>
+                <li><a href="https://github.com/Catsman/GatherYourPartium">Source Code</a> (fork us!)</li>
                 <li><a href="mailto:kyle@gatheryourparty.com">Contact us</a> (tips/corrections?)</li>
                 <li><a href="<?php get_home_url(); ?>/apply">Contribute to GYP!</a></li>
                 <li><a href="<?php get_home_url(); ?>/wp-admin">Login</a></li>
