@@ -305,6 +305,12 @@ function be_hidden_meta_boxes($hidden, $screen) {
         // removed 'postcustom',
     return $hidden;
 }
+
+//jetpack needs this crap for some reason idk
+if ( ! isset( $content_width ) )
+    $content_width = 920;
+
+
 // Remove all feat. images (use with caution!)
 /*
 global $wpdb;
