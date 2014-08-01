@@ -48,5 +48,4 @@
           'walker'  => new Walker_Nav_Menu_Dropdown()));
       ?>
 
-      <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'items_wrap' => '%3$s', 'before' => '<option value="">' ) ); ?>
     </nav>
