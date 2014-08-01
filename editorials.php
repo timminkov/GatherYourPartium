@@ -63,12 +63,7 @@ Template Name: Editorials
       <?php get_template_part( 'pagination' ); ?>
     </div>
 
-
-    <div id="sidebar" class="sidebar">
-      <?php if ( is_active_sidebar( 'sidebar-front' ) ) : ?>
-        <?php dynamic_sidebar( 'sidebar-front' ); ?>
-      <?php endif; ?>
-    </div>
+    <?php get_template_part( 'partials/sidebar' ); ?>
   </div>
 </section>
 
