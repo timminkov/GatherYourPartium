@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Humour
+*/
+?>
+
 <?php get_header(); ?>
 
 <img id="background" src="<?php echo site_url(); echo get_option('imageurl'); ?>">

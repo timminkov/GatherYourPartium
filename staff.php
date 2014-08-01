@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: About
+*/
+?>
+
 <?php get_header(); ?>
 
 <img id="background" src="<?php bloginfo('template_url'); ?>/img/defaultbgv4.jpg">
