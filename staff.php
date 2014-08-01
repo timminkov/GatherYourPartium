@@ -11,7 +11,7 @@ Template Name: About
 <img id="logo" src="<?php bloginfo('template_url'); ?>/img/placeholderlogo.png">
 
 <h2>Gather <em>Your</em> Party</h2>
-<div id="strap">Honest Gaming Journalism</div>
+<div id="strap">Just Video Games</div>
 
 <section id="main">
     <div class="wrap">
@@ -43,8 +43,8 @@ while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 	    <a href="<?php the_permalink(); ?>">
             <div class="article-recent">
 
-                <?php the_post_thumbnail( 'about-page', array('class' => "staff-thumb") ); ?> 
-                
+                <?php the_post_thumbnail( 'about-page', array('class' => "staff-thumb") ); ?>
+
                 <div class="staff-article">
 
                     <h3 class="staff-title"><?php the_author_posts_link(); ?></h3>
@@ -61,7 +61,7 @@ while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 <?php endwhile; ?>
 <?php wp_reset_postdata(); // reset the query ?>
-        
+
 
         <!--
 

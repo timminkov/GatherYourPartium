@@ -7,7 +7,7 @@
 </a>
     <h2>Gather <em>Your</em> Party</h2>
 
-<div id="strap">Honest Gaming Journalism</div>
+<div id="strap">Just Video Games</div>
 
 <section id="main">
     <div class="wrap">
@@ -59,7 +59,7 @@ while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
         </div>
 
-        
+
     <div id="sidebar" class="sidebar">
     <?php if ( is_active_sidebar( 'sidebar-front' ) ) : ?>
     <?php dynamic_sidebar( 'sidebar-front' ); ?>

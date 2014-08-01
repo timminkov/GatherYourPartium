@@ -5,4 +5,4 @@
 </a>
 
 <h2>Gather <em>Your</em> Party</h2>
-<div id="strap">Honest Gaming Journalism</div>
+<div id="strap">Just Video Games</div>
