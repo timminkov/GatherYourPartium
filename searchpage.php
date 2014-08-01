@@ -19,7 +19,7 @@ Template Name: Search-page
         <link href='http://fonts.googleapis.com/css?family=Raleway:900,700,600,800,500,400,300,200,100' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
         <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
-        
+
         <link href="//gatheryourparty.com" rel="dns-prefetch" />
         <link href="//fonts.googleapis.com" rel="dns-prefetch" />
         <link href="//ajax.googleapis.com" rel="dns-prefetch" />
@@ -30,7 +30,7 @@ Template Name: Search-page
         <?php wp_head(); ?>
     </head>
     <body class="fullscreen">
- 
+
     <!--[if IE]>
         <style>
             *{font-family:Comic Sans, cursive!important;}

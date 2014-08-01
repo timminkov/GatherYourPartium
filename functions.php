@@ -20,7 +20,7 @@ add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 
 //Post thumbnails
 
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'front-page-standard', 174, 130, 1 );
 add_image_size( 'front-page-featured', 920, 476, 1 );
@@ -82,7 +82,7 @@ function excerpt($limit) {
         $excerpt = implode(" ",$excerpt).'...';
       } else {
         $excerpt = implode(" ",$excerpt);
-      } 
+      }
       $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
       return $excerpt;
     }
@@ -94,9 +94,9 @@ function excerpt($limit) {
         $content = implode(" ",$content).'...';
       } else {
         $content = implode(" ",$content);
-      } 
+      }
       $content = preg_replace('/\[.+\]/','', $content);
-      $content = apply_filters('the_content', $content); 
+      $content = apply_filters('the_content', $content);
       $content = str_replace(']]>', ']]&gt;', $content);
       return $content;
     }
@@ -135,18 +135,18 @@ function register_my_menus() {
 //for some reason (credit: Dennis Winter)
 
 class Walker_Nav_Menu_Dropdown extends Walker_Nav_Menu {
- 
+
     function start_lvl($output, $depth) {    }
- 
+
     function end_lvl($output, $depth) {    }
- 
+
     function start_el($output, $item, $depth, $args) {
         // Here is where we create each option.
         $item_output = '';
- 
+
         // add spacing to the title based on the depth
         $item->title = str_repeat("&amp;nbsp;", $depth * 4) . $item->title;
- 
+
         // Get the attributes.. Though we likely don't need them for this...
         $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
         $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
@@ -157,18 +157,18 @@ class Walker_Nav_Menu_Dropdown extends Walker_Nav_Menu {
         $item_output .= '<option'. $attributes .'>';
 
         $item_output .= apply_filters( 'the_title_attribute', $item->title );
- 
+
         // Add this new item to the output string.
         $output .= $item_output;
- 
+
     }
- 
+
     function end_el($output, $item, $depth) {
         // Close the item.
         $output .= "</option>\n";
- 
+
     }
- 
+
 }
 
 // Credit: eggplant studios
@@ -270,7 +270,7 @@ function cleaner_caption( $output, $attr, $content ) {
 
 
 add_action('admin_init', 'allow_contributor_uploads');
- 
+
 function allow_contributor_uploads() {
      $contributor = get_role('contributor');
      $contributor->add_cap('upload_files');
@@ -315,7 +315,7 @@ if ( ! isset( $content_width ) )
 /*
 global $wpdb;
 $wpdb->query( "
-    DELETE FROM $wpdb->postmeta 
+    DELETE FROM $wpdb->postmeta
     WHERE meta_key = '_thumbnail_id'
 " );
 */

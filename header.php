@@ -13,7 +13,7 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:900,700,600,800,500,400,300,200,100' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
         <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
-        
+
         <link href="//gatheryourparty.com" rel="dns-prefetch" />
         <link href="//fonts.googleapis.com" rel="dns-prefetch" />
         <link href="//ajax.googleapis.com" rel="dns-prefetch" />
@@ -28,7 +28,7 @@
     <noscript>
         <style>#header-search{display:none;}</style>
     </noscript>
- 
+
     <!--[if IE]>
         <style>
             *{font-family:Comic Sans, cursive!important;}
@@ -66,17 +66,17 @@
     ?>
 <!--
 
-        <select id="mobile-menu"> 
-            <option value="" selected="selected">Home</option> 
+        <select id="mobile-menu">
+            <option value="" selected="selected">Home</option>
             <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'items_wrap' => '%3$s', 'before' => '<option value="">' ) ); ?>
-            <option value="#">News</option> 
-            <option value="#">Podcasts</option> 
-            <option value="#">Videos</option> 
-            <option value="#">Editorials</option> 
-            <option value="#">Stream</option> 
-            <option value="#">About</option> 
-            <option value="#">Apply</option> 
-        </select> 
+            <option value="#">News</option>
+            <option value="#">Podcasts</option>
+            <option value="#">Videos</option>
+            <option value="#">Editorials</option>
+            <option value="#">Stream</option>
+            <option value="#">About</option>
+            <option value="#">Apply</option>
+        </select>
 
 -->
 

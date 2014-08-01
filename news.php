@@ -70,7 +70,7 @@ while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
         </div>
 
-        
+
     <div id="sidebar" class="sidebar">
     <?php if ( is_active_sidebar( 'sidebar-front' ) ) : ?>
     <?php dynamic_sidebar( 'sidebar-front' ); ?>
