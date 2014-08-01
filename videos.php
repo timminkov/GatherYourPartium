@@ -1,13 +1,12 @@
 <?php
 /*
-Template Name: Humour
+Template Name: Videos
 */
 $test = 'Videos'
 ?>
 
 <?php get_header(); ?>
 
-<?php include(locate_template('partias/test.php')); ?>
 <?php get_template_part( 'partials/test' ); ?>
 
 <section id="main">
