@@ -14,7 +14,7 @@
 
 <?php $custom_query = new WP_Query(); // don't show user bios
 while(have_posts()) : the_post(); ?>
-<?php if (is_search() && ($post->post_type=='page')) continue; //excludes pages ?> 
+<?php if (is_search() && ($post->post_type=='page')) continue; //excludes pages ?>
 
 <?php get_template_part( 'frontpost', 'large' ); ?>
 

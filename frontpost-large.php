@@ -1,8 +1,8 @@
 	    <a href="<?php the_permalink(); ?>">
             <div class="article-recent">
 
-                <?php if (has_post_thumbnail()) { the_post_thumbnail( 'front-page-standard', array('class' => "article-thumb") ); }   else {echo '<img class="front-page-standard article-thumb" src="'.get_template_directory_uri().'/img/placeholder.png" />';} ?> 
-                
+                <?php if (has_post_thumbnail()) { the_post_thumbnail( 'front-page-standard', array('class' => "article-thumb") ); }   else {echo '<img class="front-page-standard article-thumb" src="'.get_template_directory_uri().'/img/placeholder.png" />';} ?>
+
                 <div class="article-info">
 
                     <h3 class="article-title"><?php the_title(); ?></h3>

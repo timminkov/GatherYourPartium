@@ -1,6 +1,6 @@
             <a href="<?php the_permalink(); ?>">
                 <div class="article">
-                   <?php if (has_post_thumbnail()) { the_post_thumbnail( 'front-page-standard', array('class' => "article-thumb") ); }   else {echo '<img class="front-page-standard article-thumb" src="'.get_template_directory_uri().'/img/placeholder.png" />';} ?> 
+                   <?php if (has_post_thumbnail()) { the_post_thumbnail( 'front-page-standard', array('class' => "article-thumb") ); }   else {echo '<img class="front-page-standard article-thumb" src="'.get_template_directory_uri().'/img/placeholder.png" />';} ?>
                         <div class="article-info">
                             <h3 class="article-title"><?php the_title(); ?></h3>
                             <p class="article-description"><?php $myExcerpt = excerpt('32'); $tags = array("<p>", "</p>"); $myExcerpt = str_replace($tags, "", $myExcerpt); echo $myExcerpt; //seriously fuck wordpress and its errant tags ?></p></a>

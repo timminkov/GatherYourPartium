@@ -14,7 +14,7 @@ Template Name: Static Page
     <a href="<?php echo site_url(); ?>"><img id="logo" <?php if (get_field('show-header-image') == true) {echo "class=\"custom-image-logo\"";} ?> src="<?php bloginfo('template_url'); ?>/img/placeholderlogo.png"></a>
     <h2 <?php if(get_field('show-header-image') == true) {echo "class=\"custom-image-head\" ";} ?> > <?php the_field('header-title'); ?></h2>
     <div id="strap" <?php if (get_field('show-header-image') == true) {echo "class=\"custom-image-strap\" ";} ?> ><?php the_field('header-strap'); ?></div>
-    
+
     <?php
     if (get_field('add-youtube-embed') != false)
         echo'<div id="video-player"> <div class="embed-container"> <iframe width="100%" height="100%" src="http://www.youtube.com/embed/iZNven6Nuzs?modestbranding=1&rel=0" frameborder="0"></iframe></div></div>';
@@ -24,7 +24,7 @@ Template Name: Static Page
 <section id="main">
     <article class="single-article" id="single-article">
 
-    
+
 
     <?php the_content();?>
 

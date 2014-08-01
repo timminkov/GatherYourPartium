@@ -9,7 +9,7 @@
     <a href="<?php echo site_url(); ?>"><img id="logo" <?php if (get_field('show-header-image') == true) {echo "class=\"custom-image-logo\"";} ?> src="<?php bloginfo('template_url'); ?>/img/placeholderlogo.png"></a>
     <h2 <?php if(get_field('show-header-image') == true) {echo "class=\"custom-image-head\" ";} ?> > <?php the_field('header-title'); ?></h2>
     <div id="strap" <?php if (get_field('show-header-image') == true) {echo "class=\"custom-image-strap\" ";} ?> ><?php the_field('header-strap'); ?></div>
-    
+
     <?php
     if (get_field('add-youtube-embed') != false)
         echo'<div id="video-player"> <div class="embed-container"> <iframe width="100%" height="100%" src="http://www.youtube.com/embed/'.get_field('youtube-video-uri').'?modestbranding=1&rel=0" frameborder="0"></iframe></div></div>';
@@ -46,7 +46,7 @@
     <p class="single-article-meta">Article by <?php the_author_posts_link(); ?>. Last updated <?php the_modified_date(); ?>.</p>
     <p class="tags"><?php the_tags( 'Filed under: ' ); ?> </p>
 
-    <hr />  
+    <hr />
 
     <?php endwhile; ?>
 

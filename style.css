@@ -175,7 +175,7 @@ h1{
     width:100%;
     position:absolute;
     top:0px;
-    z-index:-10;  
+    z-index:-10;
     margin-left:auto;
     margin-right:auto;
     left:0;
@@ -742,7 +742,7 @@ text-decoration:none;
     border-left: 1px solid #DDDDDD;
 }
 
-/* 
+/*
 .article-pull-left img{
     float:left;
     width:40%;
@@ -757,7 +757,7 @@ text-decoration:none;
     clear:both;
 }
 
-/* 
+/*
 .article-pull-right img{
     float:right;
     width:40%;
@@ -1429,7 +1429,7 @@ input[value="Submit Post"]:active{
 
     #video-player iframe{
         margin-left:auto;
-        margin-right:auto;    
+        margin-right:auto;
         width:920px;
         height:518px;
     }
@@ -1659,7 +1659,7 @@ input[value="Submit Post"]:active{
     }
 
     #video-player, .cover-image, #video-player iframe{
-        width:100%;   
+        width:100%;
     }
 
     #mep_0{
