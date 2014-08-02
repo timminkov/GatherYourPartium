@@ -1,37 +1,28 @@
-<?php
-/*
-Template Name: Index
-*/
-?>
-
 <?php get_header(); ?>
 
-<img id="background" src="<?php bloginfo('template_url'); ?>/img/defaultbgv4.jpg">
-
-<a href="<?php echo site_url(); ?>" class="title">
-  <img id="logo" src="<?php bloginfo('template_url'); ?>/img/placeholderlogo.png">
-</a>
+<img id="background" src="<?php echo site_url(); echo get_option('imageurl'); ?>">
+<img id="logo" src="<?php bloginfo('template_url'); ?>/img/placeholderlogo.png">
 
 <h2>Gather <em>Your</em> Party</h2>
-
-<div id="strap">Just Video Games</div>
+<div id="strap"><?php echo $template_name; ?></div>
 
 <section id="main">
   <div class="wrap">
 
     <?php
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-    $args = array(
-        'tag__not_in' => convert_slug_to_id('bio'),
-        'posts_per_page' => 4,
-        'paged' => $paged,
-        'showposts' => 5,
-        'offset' =>(($paged-1)*10),
-    );
-    $wp_query = new WP_Query( $args ); // don't show user bios
-    $wp_query->is_archive = false; $wp_query->is_home = true;
-    while($wp_query->have_posts()) : $wp_query->the_post(); ?>
+      $args = array(
+          'tag__not_in' => convert_slug_to_id('bio'),
+          'tag' => $tag_name,
+          'posts_per_page' => 10,
+          'paged' => $paged,
+          'showposts' => 5,
+          'offset' => (($paged-1)*10),
+      );
+      $wp_query = new WP_Query( $args ); // don't show user bios
+      $wp_query->is_archive = false; $wp_query->is_home = true;
+      while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
     <?php get_template_part( 'frontpost', 'large' ); ?>
 
@@ -45,10 +36,11 @@ Template Name: Index
 
         $args = array(
             'tag__not_in' => convert_slug_to_id('bio'),
-            'posts_per_page' => 6,
+            'tag' => $tag_name,
+            'posts_per_page' => 10,
             'paged' => $paged,
             'showposts' => 5,
-            'offset' => (($paged-1)*10)+5,
+            'offset' => (($paged-1)*10)+6,
         );
 
         $wp_query = new WP_Query($args); // don't show user bios
@@ -59,7 +51,6 @@ Template Name: Index
       <?php endwhile; ?>
       <?php wp_reset_postdata(); // reset the query ?>
       <?php get_template_part( 'pagination' ); ?>
-
     </div>
 
     <?php get_template_part( 'partials/sidebar' ); ?>
