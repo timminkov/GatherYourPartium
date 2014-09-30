@@ -31,10 +31,9 @@
 <section id="main">
   <div id="video-stream">
     <div class="stream">
-      <object type="application/x-shockwave-flash" height="100%" width="100%" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=thecatsman" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=thecatsman&auto_play=true&start_volume=100" /></object>
     </div>
-  <div class="chat">
-    <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/chat/embed?channel=thecatsman&amp;popout_chat=true" height="100%" width="100%"></iframe>
+    <div class="chat">
+    </div>
   </div>
 </div>
 
@@ -53,5 +52,24 @@
 
   </article>
 </section>
+
+<?php
+  function load_twitch() {
+      wp_enqueue_script('jquery');
+      wp_register_script(
+        'twitch',
+        get_stylesheet_directory_uri() . '/js/stream.js',
+        array('jquery')
+      );
+
+      wp_enqueue_script(
+        'twitch',
+        get_stylesheet_directory_uri() . '/js/stream.js',
+        array('jquery')
+      );
+  }
+
+  load_twitch();
+?>
 
 <?php get_footer(); ?>
